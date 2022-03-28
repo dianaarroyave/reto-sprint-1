@@ -114,9 +114,14 @@
         top: 508px;
         left: 813px;
         background: url(logos2.png);
+    } 
+
+    .logos__inline {
+        display: none;
+    }
     
 
-    @media screen (min-width: 414px) {
+    @media (min-width: 414px) {
         
         .header {
             display: flex;
@@ -124,8 +129,6 @@
     
         .nav {
             display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         
         .nav__mobile {
@@ -133,49 +136,90 @@
         }
 
         .nav__desktop{
-            display: none;
+            display: block;
+            width: 140%;
         }
     
         .logo {
-            width: 126px;
+            width: 89px;
             height: 27px;
-            transform: translateY(-300px);
+            transform: translateY(-470px);
             font-style: normal;
-            font-weight: 900;
-            font-size: var(--logo);
-            line-height: 42px;
+            font-weight: 900s;
+            font-size: var(--md);
+            line-height: 28px;
+            position: relative;
+            left: -50%;
             letter-spacing: -0.02em;
             color: var(--white);
         }
     
         .nav__menu {
-            display: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transform: translateY(-490px);
+            width: -100px;
+            height: 27px;
+            font-size: var(--sm);
+            color: var(--white);
+            position: relative;
+            left: 7%;
         }
-    
-        .button_menu {
-            display: none;
+
+        .nav__manu--1 {
+            width: 170px
+        }
+
+        .nav__manu--2 {
+            width: 170px
+        }
+
+        .nav__manu--3 {
+            width: 170px
+        }
+
+        .nav__manu--4 {
+            width: 170px
+        }
+
+        .button__menu {
+            width: 92px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.42);
+            border-radius: 45px;
+            border-color: rgba(255, 255, 255, 0.42);
+            font-size: var(--sm);
+            line-height: 21px;
+            transform: translateY(-520px);
+            letter-spacing: -0.02em;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            right: -50%;
         }
     
         .banner {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+
         }
     
         .banner__tittle {
-            width: 305px;
-            height: 135px;
+            width: 450px;
+            height: 210px;
             transform: translateY(-235px);
             font-style: normal;
             font-weight: 900;
-            Font-size: var(--title);
-            line-height: 45px;
-            letter-spacing: 0.005em;
+            Font-size: 72px;
+            line-height: 70px;
+            letter-spacing: 0.002em;
             color: var(--graphite);
         }
     
         .banner_text {
-            display: none;
+            display: flex;
         }
     
         .banner__mobile1 {
@@ -190,7 +234,7 @@
             align-items: center;
         }
     
-        .banner_button {
+        .banner__button {
             display: none;
         }
     
@@ -204,17 +248,14 @@
         }
     
         .logos1 {
-            width: 367px;
-            height: 181px;
-            top: 335px;
-            left: 813px;
-            background: url(logos1.png);
+            display: none;
         }
     
         .logos2 {
-            width: 367px;
-            height: 181px;
-            top: 508px;
-            left: 813px;
-            background: url(logos2.png);
+            display: none;
+        }
+
+        .logos__inline {
+            background: url(/img-desktop-view/logos-desk.png);
+        }
     }
