@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
 * {
     margin: 0;
     font-family: "Roboto";
@@ -23,8 +25,14 @@
 
     .nav {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 58px;
+    }
+
+    .nav__mobile {
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
     }
 
     .nav__desktop{
@@ -34,7 +42,6 @@
     .logo {
         width: 126px;
         height: 27px;
-        transform: translateY(-300px);
         font-style: normal;
         font-weight: 900;
         font-size: var(--logo);
@@ -47,7 +54,7 @@
         display: none;
     }
 
-    .button_menu {
+    .button__menu {
         display: none;
     }
 
@@ -55,12 +62,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 82px;
     }
 
     .banner__tittle {
         width: 305px;
         height: 135px;
-        transform: translateY(-235px);
         font-style: normal;
         font-weight: 900;
         Font-size: var(--title);
@@ -69,23 +76,23 @@
         color: var(--graphite);
     }
 
-    .banner_text {
+    .banner__text {
         display: none;
     }
 
     .banner__mobile1 {
         width: 155px;
         height: 323px;
-        transform: translateY(-180px);
         background: url(mobile1.png);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 24px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 42px;
     }
 
-    .banner_button {
+    .banner__button {
         display: none;
     }
 
@@ -94,26 +101,17 @@
     }
 
     .logos {
-        transform: translateY(-180px);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .logos1 {
-        width: 367px;
-        height: 181px;
-        top: 335px;
-        left: 813px;
-        background: url(logos1.png);
+        width: 90%;
     }
 
     .logos2 {
-        width: 367px;
-        height: 181px;
-        top: 508px;
-        left: 813px;
-        background: url(logos2.png);
+        width: 90%;
     } 
 
     .logos__inline {
@@ -125,6 +123,7 @@
         
         .header {
             display: flex;
+            position: relative;
         }
     
         .nav {
@@ -137,19 +136,19 @@
 
         .nav__desktop{
             display: block;
-            width: 140%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: -1;
         }
     
         .logo {
             width: 89px;
             height: 27px;
-            transform: translateY(-470px);
             font-style: normal;
             font-weight: 900s;
             font-size: var(--md);
-            line-height: 28px;
-            position: relative;
-            left: -50%;
             letter-spacing: -0.02em;
             color: var(--white);
         }
@@ -158,29 +157,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            transform: translateY(-490px);
-            width: -100px;
-            height: 27px;
             font-size: var(--sm);
             color: var(--white);
-            position: relative;
-            left: 7%;
-        }
-
-        .nav__manu--1 {
-            width: 170px
-        }
-
-        .nav__manu--2 {
-            width: 170px
-        }
-
-        .nav__manu--3 {
-            width: 170px
-        }
-
-        .nav__manu--4 {
-            width: 170px
+            margin-left: 8%;
+            gap: 35px;
         }
 
         .button__menu {
@@ -188,17 +168,11 @@
             height: 36px;
             background: rgba(255, 255, 255, 0.42);
             border-radius: 45px;
-            border-color: rgba(255, 255, 255, 0.42);
+            border: none;
             font-size: var(--sm);
-            line-height: 21px;
-            transform: translateY(-520px);
-            letter-spacing: -0.02em;
             color: var(--white);
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            position: relative;
-            right: -50%;
+            display: block;
+            font-weight: 400;
         }
     
         .banner {
@@ -209,41 +183,51 @@
         .banner__tittle {
             width: 450px;
             height: 210px;
-            transform: translateY(-235px);
             font-style: normal;
             font-weight: 900;
             Font-size: 72px;
             line-height: 70px;
             letter-spacing: 0.002em;
             color: var(--graphite);
+            position: relative;
+            left: -18%;
         }
     
         .banner_text {
             display: flex;
+            width: 400px;
+            height: 74px;
+            position: relative;
+            left: -22%;
+            font-size: 20px;
         }
     
         .banner__mobile1 {
-            width: 155px;
-            height: 323px;
-            transform: translateY(-180px);
+            width: 176px;
+            height: 367px;
             background: url(mobile1.png);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             border-radius: 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            right: -80%;
         }
     
         .banner__button {
-            display: none;
+            display: flex;
+            width: 114px;
+            height: 36px;
+            background-color: rgba(14, 14, 14, 0.78);
+            border-radius: 45px;
         }
     
         .banner__text2 {
-            display: none;
+            display: flex;
         }
     
         .logos {
-            transform: translateY(-180px);
             display: flex;
         }
     
@@ -256,6 +240,6 @@
         }
 
         .logos__inline {
-            background: url(/img-desktop-view/logos-desk.png);
+            display: flex;
         }
     }

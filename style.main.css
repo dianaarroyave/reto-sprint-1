@@ -19,4 +19,43 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+    }
+
+    .main__banner2 {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .main__titletwo {
+        width: 343px;
+        height: 74px;   
+        font-size: var(--lg);
+        /*   line-height: 35px;
+        line-height: 100%; */
+        color: var(--white);
+        letter-spacing: -0.02em;
+    }
+    
+    .main__p {
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        /* margin-left: 70px;
+        margin-right: 90px; */
+    }
+    
+    .main__btn {
+        border-radius: 45px;
+        width: 169px;
+        height: 36px;
+        font-family: Roboto;
+        background: #1db8ef;
+        color: white;
+    }
+    
+    .main__img--mobile2 {
+        width: 170px;
+        height: 352px;
     }
