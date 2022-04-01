@@ -83,7 +83,6 @@
     .banner__mobile1 {
         width: 155px;
         height: 323px;
-        background: url(mobile1.png);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 24px;
         display: flex;
@@ -117,7 +116,8 @@
     .logos__inline {
         display: none;
     }
-    
+
+  /* Aquí comienza la versión desk */
 
     @media (min-width: 414px) {
         
@@ -151,6 +151,7 @@
             font-size: var(--md);
             letter-spacing: -0.02em;
             color: var(--white);
+            margin-top: -11px;
         }
     
         .nav__menu {
@@ -159,12 +160,12 @@
             justify-content: space-between;
             font-size: var(--sm);
             color: var(--white);
-            margin-left: 8%;
+            margin-left: 10%;
             gap: 35px;
         }
 
         .button__menu {
-            width: 92px;
+            width: 96px;
             height: 36px;
             background: rgba(255, 255, 255, 0.42);
             border-radius: 45px;
@@ -173,11 +174,11 @@
             color: var(--white);
             display: block;
             font-weight: 400;
+            margin-left: 10%;
         }
     
         .banner {
             display: flex;
-
         }
     
         .banner__tittle {
@@ -191,44 +192,54 @@
             color: var(--graphite);
             position: relative;
             left: -18%;
+            top: -30px;
         }
     
-        .banner_text {
+        .banner__text {
             display: flex;
             width: 400px;
             height: 74px;
-            position: relative;
-            left: -22%;
             font-size: 20px;
+            margin-right: 300px;
+            color: var(--graphite);
         }
     
         .banner__mobile1 {
             width: 176px;
             height: 367px;
-            background: url(mobile1.png);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             border-radius: 24px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             position: relative;
-            right: -80%;
+            margin-left: 600px;
+            position: absolute;
+            top: 100px;
         }
     
         .banner__button {
-            display: flex;
+            display: block;
             width: 114px;
             height: 36px;
             background-color: rgba(14, 14, 14, 0.78);
+            border: none;
+            color: var(--white);
             border-radius: 45px;
+            margin-top: 27px;
+            margin-right: 590px;
         }
     
         .banner__text2 {
-            display: flex;
+            display: block;
+            width: 114px;
+            height: 36px;
+            margin-top: -20px;
+            margin-right: 300px;
+            color: var(--graphite);
+            font-weight: blod;
         }
     
         .logos {
             display: flex;
+            justify-content: center;
         }
     
         .logos1 {
