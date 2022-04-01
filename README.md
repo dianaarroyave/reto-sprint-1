@@ -1,0 +1,1 @@
+Este es el reto del primer sprint del Semillero de Desarrolladores, el cual es realizado por equipos de tres personas, la parte desarrollada por mí es el header, el main fue desarrollado por Daniel Mayo y el footer por Danier Santiago Ortega
