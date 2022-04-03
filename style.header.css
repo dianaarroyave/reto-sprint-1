@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: "Roboto";
+    width: 100%;
     }
 
     :root {
@@ -124,14 +125,18 @@
         .header {
             display: flex;
             position: relative;
+            width: 100%;
         }
     
         .nav {
             display: flex;
+            width: 70%;
+            align-items: baseline;
         }
         
         .nav__mobile {
-            display: none
+            display: none;
+            width: 70%
         }
 
         .nav__desktop{
@@ -145,27 +150,26 @@
     
         .logo {
             width: 89px;
-            height: 27px;
             font-style: normal;
             font-weight: 900s;
             font-size: var(--md);
             letter-spacing: -0.02em;
             color: var(--white);
-            margin-top: -11px;
+            margin-right: 10%;
         }
     
         .nav__menu {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
             font-size: var(--sm);
             color: var(--white);
             margin-left: 10%;
-            gap: 35px;
+            gap: 5px;
         }
 
         .button__menu {
-            width: 96px;
+            width: 150px;
             height: 36px;
             background: rgba(255, 255, 255, 0.42);
             border-radius: 45px;
@@ -178,9 +182,17 @@
         }
     
         .banner {
-            display: flex;
+            width: 70%;
         }
-    
+
+        .banner__container--teximg {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30%;
+            margin-top: 5%;
+        }
+
         .banner__tittle {
             width: 450px;
             height: 210px;
@@ -190,56 +202,60 @@
             line-height: 70px;
             letter-spacing: 0.002em;
             color: var(--graphite);
-            position: relative;
-            left: -18%;
-            top: -30px;
         }
-    
+
         .banner__text {
             display: flex;
             width: 400px;
-            height: 74px;
             font-size: 20px;
-            margin-right: 300px;
             color: var(--graphite);
+            margin-top: 4%;
         }
-    
+
         .banner__mobile1 {
-            width: 176px;
-            height: 367px;
+            width: 180px;
+            height: 371px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             border-radius: 24px;
-            position: relative;
-            margin-left: 600px;
-            position: absolute;
-            top: 100px;
+            margin-top: -8%;
+        }
+
+        .banner__container--button {
+            width: 114;
+            display: flex;
+            flex-direction: row;
+            gap: 4%;
         }
     
+        b {
+            font-size: var(--sm);
+        }
+
         .banner__button {
             display: block;
             width: 114px;
-            height: 36px;
             background-color: rgba(14, 14, 14, 0.78);
             border: none;
             color: var(--white);
             border-radius: 45px;
-            margin-top: 27px;
-            margin-right: 590px;
+            font-weight: var(--sm);
         }
     
         .banner__text2 {
             display: block;
-            width: 114px;
+            width: 150px;
             height: 36px;
-            margin-top: -20px;
-            margin-right: 300px;
+            background-color: var(--white);
+            border: none;
             color: var(--graphite);
-            font-weight: blod;
+            font-weight: var(--sm);
         }
     
         .logos {
             display: flex;
-            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin-top: 3%;
         }
     
         .logos1 {
@@ -252,5 +268,6 @@
 
         .logos__inline {
             display: flex;
+            width: 70%;
+            align-items: center;
         }
-    }
