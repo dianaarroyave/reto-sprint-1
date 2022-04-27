@@ -1,61 +1,161 @@
 * {
     margin: 0;
     font-family: "Roboto";
-    }
-
-    :root {
-        --white: #FFFFFF; 
-        --black: #000000;
-        --graphite: #2E2E2E;
-        --whitesmoke: #F9F9F9; 
-        --sm: 18px;
-        --md: 24px;
-        --lg: 30px;
-        --logo: 36px;
-        --title: 48px;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
+  }
+  
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --graphite: #2e2e2e;
+    --whitesmoke: #f9f9f9;
+    --sm: 18px;
+    --md: 24px;
+    --lg: 30px;
+    --logo: 36px;
+    --title: 48px;
+    --marginleft: 40px;
+  }
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .main__banner2--desk {
+    display: none;
+  }
+  .main__banner2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .main__titletwo {
+    align-items: center;
+    color: var(--white);
+    font-size: var(--lg);
+    width: 340px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    margin-top: 105px;
+    margin-left: var(--marginleft);
+  }
+  .main__p {
+    color: var(--white);
+    font-size: var(--sm);
+    width: 323px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    margin-top: 56px;
+    margin-left: var(--marginleft);
+  }
+  
+  .main__btn {
+    align-items: center;
+    border-radius: 50px;
+    border-color: #1db8ef;
+    background-color: #1db8ef;
+    width: 180px;
+    height: 30px;
+    color: var(--white);
+    font-size: var(--sm);
+    margin-left: 30%;
+    margin-top: 53px;
+  }
+  .fa-solid fa-angle-right {
+    display: inline-block;
+  }
+  .main__img--mobile2 {
+    align-items: center;
+    width: 170px;
+    height: 352px;
+    margin-top: 62px;
+  }
+  
+  /* .main__img--mobile2 {
+    transform: translateY(-400px);
+    display: flex;
+    justify-content: flex-start;
+  } */
+  
+  @media (min-width: 414px) {
     .main__banner2 {
-        position: absolute;
-        z-index: -1;
-        width: 100%;
+      display: none;
     }
-
+  
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .main__banner2--desk {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      max-height: 620px;
+      z-index: -1;
+    }
     .main__titletwo {
-        width: 343px;
-        height: 74px;   
-        font-size: var(--lg);
-        /*   line-height: 35px;
-        line-height: 100%; */
-        color: var(--white);
-        letter-spacing: -0.02em;
+      color: var(--white);
+      font-size: 46px;
+      width: 900px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -0.02em;
+      margin-left: 115px;
+      margin-top: 196px;
     }
-    
     .main__p {
-        display: flex;
-        align-items: center;
-        color: var(--white);
-        /* margin-left: 70px;
-        margin-right: 90px; */
+      color: var(--white);
+      font-size: var(--sm);
+      width: 400px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      margin-left: 115px;
+      margin-top: 32px;
     }
-    
+  
     .main__btn {
-        border-radius: 45px;
-        width: 169px;
-        height: 36px;
-        font-family: Roboto;
-        background: #1db8ef;
-        color: white;
+      /* display: flex;
+      justify-content: center;
+      text-align: center; */
+      display: inline-block;
+      border-radius: 50px;
+      border-color: #1db8ef;
+      background-color: #1db8ef;
+      width: 200px;
+      /*  height: 36px; */
+      color: var(--white);
+      font-size: var(--sm);
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      margin-left: 115px;
+      margin-top: 30px;
     }
-    
+    /* .fa-solid fa-angle-right {
+      margin-left: 12px;
+    } */
     .main__img--mobile2 {
-        width: 170px;
-        height: 352px;
+      width: 310px;
+      height: 435px;
+      margin-right: 191px;
+      margin-top: 189px;
     }
+    .main div {
+      margin-left: 100px;
+      margin-top: -150px;
+    }
+  }
+  

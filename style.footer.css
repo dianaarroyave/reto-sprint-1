@@ -1,0 +1,148 @@
+* {
+    margin-top: 0px;
+  }
+  
+  .torso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .parrafo1 {
+    width: 260px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  
+    color: #111111;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box h1 {
+    width: 126px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+    letter-spacing: -0.02em;
+  
+    color: #131313;
+  }
+  
+  .box h2 {
+    width: 187px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+  
+    color: #131313;
+  }
+  .box span {
+    color: #2fdf84;
+  }
+  
+  /*icons*/
+  .box div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*pie de pagina*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lessins {
+    width: 47%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+  
+    letter-spacing: -0.02em;
+  
+    color: #656565;
+  }
+  .line {
+    width: 100%;
+    border: 15px solid #2fdf84;
+  }
+  .derechos {
+    width: 48%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  
+    letter-spacing: -0.02em;
+  
+    color: #ababab;
+  }
+  
+  /*MEDIA-QUERY*/
+  @media (min-width: 414px) {
+    .torso {
+      flex-direction: none;
+      align-items: center;
+    }
+    .parrafo1 {
+      width: 625px;
+      height: 84px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    /*@BOX*/
+    .box {
+      display: flex;
+      flex-direction: row;
+      /*justify-content: space-around;*/
+      justify-content: center;
+      gap: 100px;
+    }
+  
+    .box div {
+      width: 7%;
+    }
+  
+    /*FOOTER*/
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .lessins {
+      width: 8%;
+    }
+    .derechos {
+      width: 11%;
+    }
+  
+    .line {
+      position: relative;
+      width: 18%;
+  
+      border: 15px solid #2fdf84;
+    }
+  }
+  
